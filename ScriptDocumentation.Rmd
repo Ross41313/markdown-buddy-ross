@@ -1,0 +1,49 @@
+---
+title: "sales_summary.R Documentation"
+author: "Ross"
+date: "2026-10-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Purpose
+
+The `sales_summary.R` script demonstrates a simple sales calculation using Base R. It stores five fictional sales values, calculates the total sales using `sum()`, calculates the average sales using `mean()`, and displays both results.
+
+## Inputs
+
+The script uses five fictional sales values entered directly in the code. It does not require external data files or user input.
+
+```{r}
+sales <- c(120, 150, 135, 160, 145)
+```
+
+## Calculations
+
+The total sales value is calculated using `sum()`, and the average sales value is calculated using `mean()`.
+
+```{r}
+total_sales <- sum(sales)
+average_sales <- mean(sales)
+```
+
+## Outputs
+
+The script displays the calculated total sales and average sales values.
+
+```{r}
+total_sales
+average_sales
+```
+
+The output objects are:
+
+- `total_sales` - the sum of the five sales values.
+- `average_sales` - the mean of the five sales values.
+
+## Dependencies
+
+The script uses Base R only. No external R packages or data files are required.
